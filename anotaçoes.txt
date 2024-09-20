@@ -1,0 +1,7 @@
+-------------COISAS DO VUE------------
+o V-for, mais simples é oq tá na página, a var "item" indica cada item no array, o "in" serve pra gente indicar qual array, e a var "index" tá pegando a posição do araray.
+o :key meio que define uma chave unica pra uma tag, os ":" nesse key é o v-bind, o v-bind servre pra quando vc quer personalizar uma tag HTML.
+
+o .push serve pra incluir coisas num array, provavelmente em outras coisas tambem.
+
+o "v-model" serve pra capturar o valor e dps a gente fazer a transferencia pro array
