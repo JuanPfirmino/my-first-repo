@@ -3,6 +3,9 @@
   <ContentPage></ContentPage>
   <FooterPage></FooterPage>
   <LoopComponent></LoopComponent>
+  <ObjectComponent></ObjectComponent>
+  <CalculoTriangulo></CalculoTriangulo>
+  <CalcCirculo></CalcCirculo>
 </template>
 
 <script>
@@ -10,11 +13,14 @@
   import ContentPage from './components/default/ContentPage.vue';
   import FooterPage from './components/default/FooterPage.vue';
   import LoopComponent from './components/LoopComponent.vue';
+  import ObjectComponent from './components/ObjectComponent.vue';
+  import CalculoTriangulo from './components/CalculoTriangulo.vue';
+  import CalcCirculo from './components/CalcCirculo.vue';
 
   export default{
     name: 'App',
     components:{
-      NavPage, ContentPage, FooterPage, LoopComponent
+      NavPage, ContentPage, FooterPage, LoopComponent, ObjectComponent, CalculoTriangulo, CalcCirculo
     }
   }
 </script>
