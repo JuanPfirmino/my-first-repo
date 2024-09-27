@@ -1,51 +1,23 @@
 <template>
-  <NavPage></NavPage>
-  <ContentPage></ContentPage>
-  <LoopComponent></LoopComponent>
-<<<<<<< HEAD
-  <ObjectComponent></ObjectComponent>
-  <CalculoTriangulo></CalculoTriangulo>
-  <CalcCirculo></CalcCirculo>
-=======
-  <FooterPage></FooterPage>
-<<<<<<< HEAD
-  <ObjetoComponent></ObjetoComponent>
-=======
-  <LoopComponent></LoopComponent>
->>>>>>> f169ffdfbfe629af5c9a9fabf4b960c8b7d8f089
->>>>>>> 3ee8cb7700b346c232e93b611ecfad1a7450c25a
+  <div>
+    <nav>
+      <router-link to="/">Hello World</router-link> <br>
+      <router-link to="/loop">Loop</router-link> <br>
+      <router-link to="/Circulo">Área de circulo</router-link> <br>
+      <router-link to="/Triagulo">Área De Triângulo</router-link> <br>
+      <router-link to="/SobreNos">Sobre nos</router-link> <br>
+      <router-link to="/Home">Home</router-link>
+    </nav>
+  </div>
+
+  <router-view></router-view>
 </template>
 
 <script>
-  import NavPage from './components/default/NavPage.vue';
-  import ContentPage from './components/default/ContentPage.vue';
-  import FooterPage from './components/default/FooterPage.vue';
-<<<<<<< HEAD
-  import LoopComponent from './components/default/LoopComponent.vue';
-  import ObjetoComponent from './components/default/ObjetoComponent.vue';
-=======
-  import LoopComponent from './components/LoopComponent.vue';
-<<<<<<< HEAD
-  import ObjectComponent from './components/ObjectComponent.vue';
-  import CalculoTriangulo from './components/CalculoTriangulo.vue';
-  import CalcCirculo from './components/CalcCirculo.vue';
-=======
->>>>>>> f169ffdfbfe629af5c9a9fabf4b960c8b7d8f089
->>>>>>> 3ee8cb7700b346c232e93b611ecfad1a7450c25a
 
   export default{
     name: 'App',
-    components:{
-<<<<<<< HEAD
-      NavPage, ContentPage, FooterPage, LoopComponent, ObjectComponent, CalculoTriangulo, CalcCirculo
-=======
-<<<<<<< HEAD
-      NavPage, ContentPage, FooterPage, LoopComponent,ObjetoComponent
-=======
-      NavPage, ContentPage, FooterPage, LoopComponent
->>>>>>> f169ffdfbfe629af5c9a9fabf4b960c8b7d8f089
->>>>>>> 3ee8cb7700b346c232e93b611ecfad1a7450c25a
-    }
+
   }
 </script>
 
