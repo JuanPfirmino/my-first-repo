@@ -1,33 +1,36 @@
+<!-- src/App.vue -->
 <template>
-  <div>
-    <nav>
-      <router-link to="/">Hello World</router-link> <br>
-      <router-link to="/loop">Loop</router-link> <br>
-      <router-link to="/Circulo">Área de circulo</router-link> <br>
-      <router-link to="/Triagulo">Área De Triângulo</router-link> <br>
-      <router-link to="/SobreNos">Sobre nos</router-link> <br>
-      <router-link to="/Home">Home</router-link>
-    </nav>
+  <div id="app">
+    <AppHeader />
+    <main>
+      <h2>Página Inicial</h2>
+      <p>Bem-vindo ao meu site!</p>
+    </main>
+    <AppFooter />
   </div>
-
-  <router-view></router-view>
 </template>
 
 <script>
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 
-  export default{
-    name: 'App',
-
-  }
+export default {
+  name: 'App',
+  components: {
+    AppHeader,
+    AppFooter,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+  padding: 20px;
 }
 </style>
