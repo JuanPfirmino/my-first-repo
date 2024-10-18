@@ -1,10 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import LoopComponent from "./components/LoopComponent.vue";
-import CalcCirculo from "./components/CalcCirculo.vue";
-import CalculoTriangulo from "./components/CalculoTriangulo.vue";
-import HomeComponent from "./components/HomeComponent.vue";
-import AboutComponent from "./components/AboutComponent.vue";
+import FetchNaruto from "./components/fetchNaruto.vue";
 
 
 const routes = [
@@ -21,29 +18,11 @@ const routes = [
     },
 
     {
-        path: '/Circulo',
-        name: 'Calculo da Área de um Circulo',
-        component: CalcCirculo
+        path:'/naruto',
+        name: 'Naruto',
+        component: FetchNaruto,
     },
-
-    {
-        path: '/Triangulo',
-        name: 'Calculo da Área de um Triângulo',
-        component: CalculoTriangulo
-    },
-
-    {
-        path: '/Home',
-        name: 'HomePage',
-        component: HomeComponent
-    },
-
-    {
-        path: '/SobreNos',
-        name: 'SobreNos',
-        component: AboutComponent
-    }
-
+   
 ];
 
 const router = createRouter({
