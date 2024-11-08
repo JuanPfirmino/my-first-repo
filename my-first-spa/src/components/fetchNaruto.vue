@@ -19,6 +19,10 @@
 
                     <div class="card-nody">
                         <h5 class="card-title"> {{ character.name }}</h5>
+
+                        <RouterLink :to="{name: 'detalhes', params: {id: character.id}}">
+                            Detalhes
+                        </RouterLink>
                     </div>
 
                 </div>

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import LoopComponent from "./components/LoopComponent.vue";
 import FetchNaruto from "./components/fetchNaruto.vue";
+import NarutoDetail from "./components/narutoDetail.vue";
 
 
 const routes = [
@@ -22,6 +23,13 @@ const routes = [
         name: 'Naruto',
         component: FetchNaruto,
     },
+
+    {
+        path: '/naruto/:id',
+        name: 'detalhes',
+        component: NarutoDetail,
+        props: true
+    }
    
 ];
 
