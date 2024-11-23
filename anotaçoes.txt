@@ -8,3 +8,44 @@ o "v-model" serve pra capturar o valor e dps a gente fazer a transferencia pro a
 
 vue router é uma extensão do vue que nos permite ver cada componente como uma pagina.
 No router.js que geralmente é o nosso arquivo das rotas a gente cria uma constante que recebe um array que tera as nossas rotas, cada rota nesse array fica entre "{}" e cada rota tem um "PATH", um "NAME" e um "COMPONENT", o path é o caminho desse componente, o name é o nome da rota e o component é a página a ser carregada
+
+----------Qualidade de código--------------
+
+Rápidas anotações sobre qualidade de código:
+
+PSR - PHP standart recommendations
+
+-> conjunto de padrões recomendados para desenvolvimento em PHP
+->Objetivo: uniformizar e facilitar interoperabilidade
+
+=> Padrões básicos:
+
+-- Arquivos devem usar <?php ou <?php = tags
+
+--Nomes de classes em PascalCase: class UserManafer{}
+
+--Nomes de meódos em CamelCase
+
+-- Indentação com 4 espaços: não usar tabulações
+
+-- linhas com no máximo 120 caracteres
+
+-- abrir chaves na mesma linha
+
+-- Autoloading de classes: estrutura de diretórios deve refletir o namespace; EX: namespace app\Controller; class UserController{}
+
+
+
+=> código limpo
+
+-- Escolha de nomes significativos: nome de variáveis e funções devem ser descritivos;
+
+-- Funções devem fazer uma única coisa: devem ser pequenas (tipo 20 linhas)
+
+-- código deve se explicar sozinho: comentários desatualizados ou redundantes atrapalham
+
+-- Use exceções em vez de códigos de erro: facilita o rastreamento de problemas
+
+-- Refatore regularmente: melhorar o código sem alterar sua funcionalidade; EX: simplificar funções complexas
+
+-- Escreva testes para garantir qualidade: testes unitários e de integração;
